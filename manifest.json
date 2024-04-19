@@ -1,0 +1,10 @@
+{
+  "name": "pkmn hp",
+  "description": "pokemon themed chrome home page (for devs...)",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "chrome_url_overrides": {
+    "newtab": "tab_override.html"
+  },
+  "permissions": ["tabs"]
+}
