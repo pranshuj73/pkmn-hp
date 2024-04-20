@@ -6,60 +6,17 @@
     <meta charset="utf-8">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 100 100&quot;><text y=&quot;.9em&quot; font-size=&quot;85&quot;>⚡</text></svg>" type="image/x-icon" id="favicon">
 
-    <!-- add scriptjs -->
+    <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
-
-    <style>
-        body {
-            background-color: #000000;
-            margin: 0;
-            overflow: hidden;
-            background-image: url("assets/bg.png");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-
-        }
-
-        .container {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-
-        .link {
-            text-decoration: none;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin: 0 15px;
-            margin-top: 40px;
-            font-size: 16px;
-            opacity: 0.9;
-            padding: 30px;
-        }
-        .link span {
-            opacity: 0.7;
-            font-weight: 600;
-            margin-top: 4px;
-        }
-        .time {
-            position: absolute;
-            bottom: 20px;
-            right: 20px;
-            color: white;
-            font-size: 36px;
-            font-weight: 700;
-            opacity: 0.7;
-        }
-    </style>
 </head>
 
 <body>
+    <!-- JUST COMMENT THIS OUT IF YOU DONT NEED A LIVE WALLPAPER -->
+    <video autoplay muted loop preload="auto" id="myVideo">
+        <img src="assets/bg.png" alt="emerald" id="myVideo">
+        <source src="assets/emerald.mp4" type="video/mp4">
+    </video>
+    
     <div class="container">
         <!-- three a links with svg icons of link, the links they redirect to are localhost:3000, localhost:3001 and localhost:8000, there should also be a text under each icon which would be 3000, 3001 and 8000 respectively -->
         <a href="http://localhost:3000" class="link">
